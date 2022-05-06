@@ -10,9 +10,9 @@ phases:
       - echo ======================Pre build ==================
       - pwd
       - ls -al
-      - ls -al ./TomCat/src/main/resources/
-      - aws s3 cp s3://davvkfirstbucket/dbConfig.properties ./TomCat/src/main/resources/dbConfig.properties
-      - ls -al ./TomCat/src/main/resources/
+      - ls -al ./src/main/resources/
+      - aws s3 cp s3://davvkfirstbucket/dbConfig.properties ./src/main/resources/dbConfig.properties
+      - ls -al ./src/main/resources/
   build:
     commands:
       - mvn package
